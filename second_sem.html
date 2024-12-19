@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulupov</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style_ss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/55/2a/c2/552ac2b9dc25894d1205d81b9b306acb.jpg" alt="Логотип" class="img-fluid mx-3">
+        </div>
+        <div class="name text-right mx-3">
+            <p>Группа: <u>ЭФБО-01-23</u></p>
+            <p>Тулупов Тимур Егорович</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md menu" style="margin-top: 10px;">
+        <div class="dropdown ms-3 d-md-none">
+            <button class="btn btn-secondary dropdown-toggle menu-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./main_page.html">Главная</a></li>
+                <li><a class="dropdown-item" href="./first_sem.html">Первый семестр</a></li>
+                <li><a class="dropdown-item" href="./second_sem.html">Второй семестр</a></li>
+                <li><a class="dropdown-item" href="./uslugi.html">Услуги</a></li>
+                <li><a class="dropdown-item" href="#">Авторизация</a></li>
+            </ul>
+        </div>
+        <div class="container d-none d-md-flex justify-content-between align-items-center">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./main_page.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./first_sem.html">Первый семестр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./second_sem.html">Второй семестр</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./uslugi.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Авторизация</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navigation col-md-3">
+            <div class="container-fluid">
+                <ul class="nav flex-column">
+                    <li class="nav-header" style="font-size: clamp(14px, 1.5vw, 21px); margin-top: 15px;">Навигация по странице</li>
+                    <li class="nav-item"><a class="nav-link" href="#accordion">Аккардион</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carouseL">Карусель</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="col-md-9">
+            <div class="container-fluid">
+                <div class="accordion" id="accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          FRONTEND
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую привлекательность.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          BACKEND
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность данных.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          BOOTSTRAP
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Bootstrap (также известен как Twitter Bootstrap) — популярный фреймворк для создания сайтов и веб-приложений с открытым исходным кодом. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="carouseL" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="img1.png" class="d-block mx-auto" alt="Хорошего дня!">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="img2.png" class="d-block mx-auto" alt="Доброго утра!">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img src="img3.png" class="d-block mx-auto" alt="Чудесного вечера!">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouseL" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouseL" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+  </div>
+  <footer class="bg text-light py-3">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+          <p class="m-auto">© Тулупов Тимур Егорович, 2024</p>
+          <div class="tg-image">
+              <a href="https://t.me/TtfkTtfk56"><img src="tg.png" alt="tg" class="img-fluid"></a>
+          </div>
+      </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>  

@@ -1,0 +1,45 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    border: 4px solid grey;
+    overflow: hidden;
+    max-width: 640px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    padding-top: 40px;
+    padding: 10px;
+}
+
+#my_photo {
+    height: 150px;
+    width: 150px; 
+    float: right;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+@media (max-width: 768px) {
+    .my_photo{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .my_photo{
+        height: 60px;
+        width: 60px;
+    }
+}

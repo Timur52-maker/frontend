@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tulupov</title>
+        <link rel="stylesheet" href="style-MainAndForm.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div id="header-content">
+                <img src="https://i.pinimg.com/736x/55/2a/c2/552ac2b9dc25894d1205d81b9b306acb.jpg" class="mini_img">
+                <div id="info">
+                    <p>Группа <u>ЭФБО-01-23</u></p>
+                    <p>Тулупов Тимур Егорович</p>
+                </div>
+            </div>
+            <div class="header-menu">
+                <p><a href="./main_page.html">Главная</a></p>
+                <p><span style="word-spacing: normal;"><a href="./first_sem.html">Первый семестр</a></span></p>
+                <p><span style="word-spacing: normal;"><a href="./second_sem.html">Второй семестр</a></span></p>
+                <p><a href="./uslugi.html">Услуги</a></p> 
+                <p>Авторизация </p>
+            </div>
+        </header>
+
+    <div id="main">
+        <nav>
+            <p><b>Навигация по странице</b></p>
+            <p><a>Разработка веб-приложений</a></p>
+            <a href="#"><img id="upup" src="/стрелка.png"></a>
+        </nav>
+
+        <main>
+            <h1>Разработка веб-приложений</h1>
+
+            <div class="grid-container">
+                <div class="frame">
+                    <img src="https://i.pinimg.com/736x/22/7b/80/227b8097dce8fb456d52d5ec3d40ad79.jpg" alt="Сайт-визитка">
+                    <p>Сайт-визитка</p>
+                    <button data-service="Сайт-визитка">Заказать</button>
+                </div>
+                <div class="frame">
+                    <img src="https://i.pinimg.com/736x/db/cf/24/dbcf248ede542c126d9fdf1ffbd263bf.jpg" alt="Корпоративный сайт">
+                    <p>Корпоративный сайт</p>
+                    <button data-service="Корпоративный сайт">Заказать</button>
+                </div>
+                <div class="frame">
+                    <img src="https://sun9-27.userapi.com/s/v1/ig2/d1cePxz3wrtSiKIFamgxGBHww2UYog8lJOQIy9_NKuoTLFFsjqgpW2EzEH5feGJFVpp9ykdkZBM-MqIW1u8Z0SKT.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&from=bu&u=rmoyEU2ScNRxF8ng0VB-cjoACCIeE5fiub8Z5zccXEM&cs=604x604" alt="Интернет магазин">
+                    <p>Интернет магазин</p>
+                    <button data-service="Интернет магазин">Заказать</button>
+                </div>
+                <div class="frame">
+                    <img src="https://i.pinimg.com/736x/a7/9d/74/a79d74c1fc7c605968bf7b663ecd75a9.jpg" alt="Личный сайт">
+                    <p>Личный сайт</p>
+                    <button data-service="Личный сайт">Заказать</button>
+                </div>
+                <div class="frame">
+                    <img src="https://i.pinimg.com/736x/6d/08/fe/6d08fecda72967e22854a2d93c627927.jpg" alt="Android-сайт">
+                    <p>Android-сайт</p>
+                    <button data-service="Android-сайт">Заказать</button>
+                </div>
+                <div class="frame">
+                    <img src="https://i.pinimg.com/736x/4a/39/d5/4a39d57b2b9b78c261a0de84d00a3890.jpg" alt="IOS-сайт">
+                    <p>IOS-сайт</p>
+                    <button data-service="IOS-сайт">Заказать</button>
+                </div>
+            </div>
+            <p class="text">Тут нужно было какой-то текстик написать, поэтому это здесь.</p>
+        </main>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Разработка веб-приложения</h2>
+            <h3>Заполните форму и мы свяжемся с вами для уточнения деталей</h3>
+
+            <form id="orderForm">
+                <label for="name">Как вас зовут: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш e-mail: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+
+                <label for="country">Страна:</label>
+                <select id="country" name="country" required>
+                    <option value="Россия">Россия</option>
+                    <option value="Казахстан">Казахстан</option>
+                    <option value="Беларусь">Беларусь</option>
+                    <option value="Украина">Украина</option>
+                </select>
+
+                <label for="comments">Комментарий:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <input type="hidden" id="serviceType" name="serviceType" value="">
+
+                <div class="field" style="display: flex;">
+                    <input type="checkbox" value="Я согласен на обработку персональных данных" style="width: auto; margin-right: 10px; transform: scale(1.5);">
+                    <label>Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+
+            <p id="successMessage" class="success-message">Форма успешно отправлена!</p>
+
+            <button onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <footer>
+        <h4>© Тулупов Тимур Егорович, 2024</h4>
+        <a href="https://t.me/TtfkTtfk56">
+            <img src="https://img.icons8.com/?size=48&id=63306&format=png" height="30" width="30" class="tg-icon">
+        </a>
+    </footer>
+
+    <script>
+        // Открытие модального окна
+        const modal = document.getElementById('modal');
+        const serviceTypeInput = document.getElementById('serviceType');
+        const buttons = document.querySelectorAll('.frame button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                serviceTypeInput.value = this.getAttribute('data-service');
+                modal.style.display = 'flex';
+            });
+        });
+
+        // Закрытие модального окна
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Проверка формы и отправка
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (this.checkValidity()) {
+                document.getElementById('successMessage').style.display = 'block';
+
+                setTimeout(() => {
+                    closeModal();
+                    document.getElementById('successMessage').style.display = 'none';
+                    this.reset();
+                }, 3000);
+            }
+        });
+
+        // Маска для телефона
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let x = e.target.value.replace(/\D/g, '');
+            e.target.value = '+7 (' + x.substring(0, 3) + ') ' + x.substring(3, 6) + '-' + x.substring(6, 8) + '-' + x.substring(8, 10);
+        });
+    </script>
+
+<script>
+    window.onload = function() {
+        adjustMargin();
+    };
+
+    window.onresize = function() {
+        adjustMargin();
+    };
+
+    function adjustMargin() {
+        const header = document.querySelector('header');
+        const main = document.querySelector('main');
+        const nav = document.querySelector('nav');
+
+        const headerHeight = header.offsetHeight;
+        main.style.marginTop = headerHeight + 'px';
+        nav.style.marginTop = headerHeight + 'px';
+    }
+</script>
+</body>
+</html>

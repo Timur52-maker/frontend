@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulupov</title>
+    <link rel="stylesheet" href="style-tables_map_pdf.css">
+    <link rel="stylesheet" href="style-MainAndForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-content">
+            <img src="https://i.pinimg.com/736x/55/2a/c2/552ac2b9dc25894d1205d81b9b306acb.jpg" class="mini_img">
+            <div id="info">
+                <p>Группа <u>ЭФБО-01-23</u></p>
+                <p>Тулупов Тимур Егорович</p>
+            </div>
+        </div>
+        <div class="header-menu">
+            <p><a href="./main_page.html">Главная</a></p>
+            <p><span style="word-spacing: normal;"><a href="./first_sem.html">Первый семестр</a></span></p>
+            <p><span style="word-spacing: normal;"><a href="./second_sem.html">Второй семестр</a></span></p>
+            <p><a href="./uslugi.html">Услуги</a></p>
+            <p>Авторизация </p>
+        </div>
+    </header>
+
+    <div id="main">
+        <nav>
+            <p><b>Навигация по странице</b></p>
+            <p><a href="#Лекции">Лекции</a></p>
+            <p><a href="#Практики">Практики</a></p>
+            <p><a href="#Адрес вуза">Адрес вуза</a></p>
+            <p><a href="#Рабочая программа">Рабочая программа</a></p>
+            <a href="#"><img id="upup" src="/стрелка.png"></a>
+        </nav>
+
+        <main>
+            <h1>Первый семестр</h1>
+            <button id="lections">Лекции</button>
+            <table border="4" cellpadding="5" id="lecturesTable">
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Углубленное изучение HTML</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Адаптиваная верстка Flexbox и Grid Layout</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bootstrap - работа с фреймворком</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Работа с DOM и событиями в JavaScript</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Введение в GitHub и GitHub Pages</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+
+            <button id="practices">Практики</button>
+            <table border="4" cellpadding="5" id="practicesTable">
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Выполнение</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Работа с классами CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Адаптиваная верстка</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Базовые задачи на JS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Встраивание скриптов</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Отладка сценариев</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Анимации и работа с ними</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>GitHub</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Защита проекта</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+
+            <h2><a name="Адрес вуза">Адрес вуза</a></h2>
+            <p class="text">Занятия проходят по адресу: <b><u>просп. Вернадского, 78, стр. 4, Москва</b></u></p>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa72a77daf5557d200704d7bc86bcb3ca294669ad4f9e07f287b428cb6c423760&amp;source=constructor"
+                width="95%" height="400" frameborder="0"></iframe>
+
+            <div class="work_programm">
+                <h2><a name="Рабочая программа">Рабочая программа</a></h2>
+                <div style="padding: 10px; width: 90%">
+                    <embed src="./Cognitive_biases.pdf" type="application/pdf" width="100%" height="600px">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h4>© Тулупов Тимур Егорович, 2024</h4>
+        <a href="https://t.me/TtfkTtfk56">
+            <img src="https://img.icons8.com/?size=48&id=63306&format=png" height="30" width="30" class="tg-icon">
+        </a>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            adjustMargin();
+        };
+
+        window.onresize = function () {
+            adjustMargin();
+        };
+
+        function adjustMargin() {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const nav = document.querySelector('nav');
+
+            const headerHeight = header.offsetHeight;
+            main.style.marginTop = headerHeight + 'px';
+            nav.style.marginTop = headerHeight + 'px';
+        }
+    </script>
+
+    <script> //кнопки лекций и практик
+        document.addEventListener('DOMContentLoaded', function () {
+            const lecturesTable = document.getElementById('lecturesTable');
+            const practicesTable = document.getElementById('practicesTable');
+
+            const toggleLecturesButton = document.getElementById('lections');
+            const togglePracticesButton = document.getElementById('practices');
+
+            let lecturesVisible = true;
+            let practicesVisible = true;
+
+            toggleLecturesButton.addEventListener('click', function () {
+                lecturesVisible = !lecturesVisible; // Переключаем видимость
+                lecturesTable.classList.toggle('hidden', !lecturesVisible); // Добавляем/убираем класс hidden
+            });
+
+            togglePracticesButton.addEventListener('click', function () {
+                practicesVisible = !practicesVisible; // Переключаем видимость
+                practicesTable.classList.toggle('hidden', !practicesVisible); // Добавляем/убираем класс hidden
+            });
+        });
+    </script>
+</body>
+
+</html>

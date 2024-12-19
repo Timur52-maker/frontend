@@ -1,0 +1,367 @@
+body {
+    font-family: 'Nunito';
+    background-color: rgb(165, 63, 63);
+    margin: auto;
+}
+
+.mini_img {
+    height: 75px;
+    width: 75px; 
+    float: left;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#info {
+    font-size: 17px;
+    float: right;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    clear: both;
+    font-size: 21px;
+    border-top: 2px solid rgb(122, 57, 57);
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.header-menu p {
+    margin: 0 20px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-menu a:hover {
+    color: rgb(226, 136, 136);
+}
+
+.header-menu a:active {
+    color: rgb(255, 82, 82);
+    transform: scale(1.2);
+}
+
+header {
+    background-color: rgb(139, 64, 99);
+    color: rgb(255, 237, 237);
+    border: 2px solid rgb(230, 100, 83);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+
+main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    float: left;
+    background-color: #cecece;
+    border: 2px solid rgb(39, 97, 84);
+}
+
+#main {
+    height: auto;
+    display: flex;
+}
+
+nav {
+    width: 20%;
+    padding: 10px;
+    border: 2px solid rgb(39, 97, 84);
+    font-size: 17px;
+    background-color: rgb(240, 227, 227);
+    position: relative;
+}
+
+#upup {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+nav b {
+    font-size: 19px;
+}
+
+nav a {
+    display: block;
+    margin-left: 20px; 
+    color: inherit; /* Унаследовать цвет от родительского элемента */
+}
+
+nav a:hover {
+    color: #ac0000;
+}
+
+nav a:active {
+    color: #ff0000; 
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 32px; 
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.text {
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer {
+    clear: both;
+    margin-bottom: auto;
+    text-align: center;
+    color: rgb(255, 237, 237);
+    border: 2px solid rgb(39, 97, 84);
+}
+
+.tg-icon {
+    float: right;
+    position: relative;
+    top: -45px;
+    left: -20px;
+}
+
+.grid-container {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 2fr);
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.frame {
+    border: 2px solid rgb(39, 97, 84);
+    text-align: center;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgb(240, 227, 227);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 10px;
+}
+
+.frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.frame img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.frame p {
+    margin: 10px;
+    font-weight: bold; 
+}
+
+@media (max-width: 1220px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-menu {
+        font-size: 18px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .mini_img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    nav a:active {
+        color: #ff0000; 
+        font-weight: bold; 
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    #info p {
+        font-size: 14px;
+    }
+}
+
+/* Адаптация под мобильные устройства до 480px */
+@media (max-width: 480px) {
+    .header-menu {
+        font-size: 14.4px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .mini_img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #info p {
+        font-size: 12px;
+    }
+
+    nav {
+        font-size: 11px;
+    }
+
+    nav a:active {
+        color: #ff0000; 
+        font-weight: bold; 
+    }
+
+    nav b {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    footer h4 {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 391px) {
+    .tg-icon{
+        width: 20px;
+        height: 20px;
+        padding: 10px 0;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+input, select, textarea {
+    width: 99%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox {
+    width: 10%;
+}
+
+button {
+    background-color: rgb(39, 97, 84);
+    color: white;
+    padding: 10px  30px;
+    margin: 7px;
+    border: none;
+    font-size: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: 'Nunito';
+}
+
+button:hover {
+    background-color: rgb(52, 173, 103);
+}
+
+.success-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+}

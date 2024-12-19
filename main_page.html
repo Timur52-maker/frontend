@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulupov</title>
+    <link rel="stylesheet" href="style-MainAndForm.css">
+    <link rel="stylesheet" href="style-video.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-content">
+            <img src="https://i.pinimg.com/736x/55/2a/c2/552ac2b9dc25894d1205d81b9b306acb.jpg" class="mini_img">
+            <div id="info">
+                <p>Группа <u>ЭФБО-01-23</u></p>
+                <p>Тулупов Тимур Егорович</p>
+            </div>
+        </div>
+        <div class="header-menu">
+            <p><a href="./main_page.html">Главная</a></p>
+            <p><span style="word-spacing: normal;"><a href="./first_sem.html">Первый семестр</a></span></p>
+            <p><span style="word-spacing: normal;"><a href="./second_sem.html">Второй семестр</a></span></p>
+            <p><a href="./uslugi.html">Услуги</a></p>
+            <p>Авторизация </p>
+        </div>
+    </header>
+
+    <div id="main">
+        <nav>
+            <p><b>Навигация по странице</b></p>
+            <p><a href="#Фронтенд">Фронтенд</a></p>
+            <p><a href="#Бэкенд">Бэкенд</a></p>
+            <a href="#"><img id="upup" src="/стрелка.png"></a>
+        </nav>
+
+        <main>
+            <h1 id="hello">Добро пожаловать на мой сайт</h1>
+            <img src="./photka1.jpg" id="my_photo" align="right">
+            <p class="text" alin-"left">Меня зовут Тулупов Тимур Егорович и я начинающий специалист по веб-разработке.
+            </p>
+
+            <h2><a name="Фронтенд"><b>Фронтенд</b></a></h2>
+            <p class="text" id="frontend-text">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он
+                включает в себя все
+                визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики
+                используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные
+                и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и
+                эстетическую привлекательность.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="./clip1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+
+            <h2><a name="Бэкенд"><b>Бэкенд</b></a></h2>
+            <p class="text">Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку
+                данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания
+                логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность
+                данных.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="./clip2.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h4>© Тулупов Тимур Егорович, 2024</h4>
+        <a href="https://t.me/TtfkTtfk56">
+            <img src="https://img.icons8.com/?size=48&id=63306&format=png" height="30" width="30" class="tg-icon">
+        </a>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            adjustMargin();
+        };
+
+        window.onresize = function () {
+            adjustMargin();
+        };
+
+        function adjustMargin() {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const nav = document.querySelector('nav');
+
+            const headerHeight = header.offsetHeight;
+            main.style.marginTop = headerHeight + 'px';
+            nav.style.marginTop = headerHeight + 'px';
+        }
+    </script>
+    <script src="img_script.js"></script> <!-- вращение + замена фото -->
+
+    <script> /* клик на залоговок */
+        document.addEventListener('DOMContentLoaded', function () {
+            const developmentHeader = document.getElementById('hello');
+
+            developmentHeader.addEventListener('click', function () {
+                alert("Вы кликнули на заголовок - так держать!");
+            });
+        });
+    </script>
+
+    <script> /* изменение фона */
+        document.addEventListener('DOMContentLoaded', function () {
+            const frontendText = document.getElementById('frontend-text');
+
+            frontendText.addEventListener('click', function () {
+                this.style.backgroundColor = 'lightblue';
+                this.style.transition = 'background-color 0.5s ease';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

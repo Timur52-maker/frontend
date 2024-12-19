@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+    background-color: rgb(165, 63, 63);
+}
+
+.logo img {
+    margin: 5%;
+    width: clamp(40px, 7vw, 70px);
+}
+
+header {
+    background-color: rgb(139, 64, 99);
+    color: rgb(241, 229, 229);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 500;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.name p:nth-of-type(1)
+{
+    font-size: clamp(12px, 2vw, 17px);
+    margin-bottom: -3%;
+}
+
+.name p:nth-of-type(2)
+{
+    white-space: nowrap;
+    font-size: clamp(12px, 2vw, 17px);
+    margin-bottom: -3%;
+}
+
+.menu {
+    font-size: clamp(12px, 1.65vw, 19px);
+    background-color: rgb(139, 64, 99);
+    border-top: 2px solid rgb(95, 1, 1);
+    border-bottom: 2px solid rgb(255, 41, 123);
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 2vw;
+    color: rgb(247, 194, 210);
+    transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ac0000;
+}
+
+.menu a:active {
+    color: #ff0000; 
+    transform: scale(1.2);
+}
+
+.navigation {
+    font-size: clamp(12px, 1.5vw, 17px);
+    border: 2px solid rgb(0, 99, 86);
+    background-color: rgb(240, 227, 227);
+}
+
+main {
+    border: 2px solid rgb(0, 99, 86);
+    background-color: #cecece;
+}
+
+footer {
+    border-top: 2px solid rgb(0, 99, 86);
+    background-color: rgb(165, 63, 63);
+}
+
+footer p {
+    font-size: clamp(12px, 2vw, 17px);
+    margin: 0;
+}
+
+.tg-image img{
+    width: clamp(25px, 2.5vw, 60px);
+}
+
+.nav-link {
+    color: black;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ac0000;
+}
+
+.nav-link:active {
+    color: #ff0000;
+}
+
+.menu-2 {
+    background-color: #00643b;
+}
+
+.menu-2:hover,
+.menu-2:focus,
+.menu-2:active,
+.menu-2:after{
+    background-color: #00643b;
+}
+
+.accordion{
+    margin: 20px;
+}
+
+div#carouseL{
+    margin: 15px auto;
+    width: clamp(300px, 50%, 600px);
+    height: auto;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: auto;
+    margin: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px; 
+}
+
+.dropdown-menu.show {
+    background-color: #00643b;
+}
